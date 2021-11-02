@@ -1,4 +1,9 @@
-package jb01.part07;
+//package jb01.part07;
+
+/*
+	1. 문자를 int DataType으로 변경하는 Integer.parseInt() 사용
+	2. 특수문자 사용하기 (\t, \n, \")
+*/
 
 public class IfElseETC
 {
@@ -9,10 +14,12 @@ public class IfElseETC
 
 		System.out.println("================================");
 
+		//입력한 문자를 int DataType으로 변경하는 Integer.parseInt() 사용
 		int i = Integer.parseInt(args[0]);
 		int j = Integer.parseInt(args[1]);
 
-		System.out.println("i="+"\t j="+j);
+		//i, j 변수에 값을 확인하자.
+		System.out.println("i="+i+"\t j="+j);
 		System.out.println("한 줄 처리\n");
 		System.out.println("================================");
 

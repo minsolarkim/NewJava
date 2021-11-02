@@ -1,11 +1,11 @@
-package jb01.test;
+//package jb01.test;
 //????????
 public class Test3 
 {
 	public static void main(String[] args) 
 	{
-		int i1 = args[0];
-		int i2 = args[1];
+		int i1 = Integer.parseInt(args[0]);
+		int i2 = Integer.parseInt(args[1]);
 
 		if (i1%2 == 0) 
 		{

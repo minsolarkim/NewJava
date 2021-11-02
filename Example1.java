@@ -1,10 +1,10 @@
-package jb01.test;
+//package jb01.test;
 
 public class Example1 
 {
 	public static void main(String[] args) 
 	{
-		int num = args[0];
+		int num = Integer.parseInt(args[0]);
 		
 		if(num >= 90) {
 			System.out.println("입력하신 값 " + num + "점은 수입니다.");

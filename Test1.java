@@ -1,4 +1,4 @@
-package jb01.test;
+//package jb01.test;
 
 public class Test1 
 {

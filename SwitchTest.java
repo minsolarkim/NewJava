@@ -1,4 +1,6 @@
-package jb01.part08;
+//package jb01.part08;
+
+//분기문 switch 연습
 
 public class  SwitchTest
 {
@@ -6,6 +8,10 @@ public class  SwitchTest
 	{
 		int inputData = Integer.parseInt(args[0]);
 
+		//switch문은 ()내부의 값과 case의 상수와 같으면 case 내부의 실행문을 수행
+		//break;문을 만날때까지 진행한다.
+
+		//switch(변수) : 변수는 반드시 정수형일것 (byte, short, int, long, char .5EA)
 		switch(inputData)
 		{
 			case 1:
@@ -31,3 +37,8 @@ public class  SwitchTest
 
 	}
 }
+
+/*
+	case 1: 의 break를 주석처리하고 실행해보면
+	어떤 결과가 나오는지 확인하자 ==> break의 역할 확인
+*/
