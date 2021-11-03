@@ -16,15 +16,15 @@ public class OperatorTest
 		++value; //자기자신 1 증가
 		System.out.println("++value : "+value);
 
-		value--; //자기자신 2 감소
+		value--; //자기자신 1 감소
 		System.out.println("value-- : "+value);
-		--value; //자기자신 2 감소
+		--value; //자기자신 1 감소
 		System.out.println("--value : "+value);
 
-		int temp = value++; //temp = value++의 의미 : value 값을 temp 대입 후 자기자신 1 증가
+		//int temp = value++; //temp = value++의 의미 : value 값을 temp 대입 후 자기자신 1 증가
 		//int temp = value--; //temp = value--의 의미 : value 값을 temp 대입 후 자기자신 1 감소
-		//int temp = value--; //temp = value--의 의미 : value 값을 temp 대입 후 자기자신 1 감소
-		//int temp = value--; //temp = value--의 의미 : value 값을 temp 대입 후 자기자신 1 감소
+		//int temp = ++value; //temp = ++value의 의미 : value 자기자신에 1 증가 후 그 값 temp에 대입
+		int temp = --value; //temp = --value의 의미 : value 자기자신에 1 감소 후 그 값 temp에 대입
 
 		System.out.println("temp : " + temp);
 		System.out.println("value : " + value);
@@ -36,7 +36,7 @@ public class OperatorTest
 		System.out.println("나머지 연산자 : 5%3 ==>" + temp02);
 
 		//삼항연산자 :: (조건) ? 조건이 참이면 : 조건이 거짓이면;
-		int temp03 = (1 <=2 ) ? 3 : 4 ;
+		int temp03 = (1 <= 2 ) ? 3 : 4 ;
 		System.out.println("삼항연산자 : (1 <= 2) ? 3 : 4 ==> " + temp03);
 
 		//int temp04 = ( 1 =< 2 ) ? 3 : 4; //<== compile Error 확인

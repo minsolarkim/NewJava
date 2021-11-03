@@ -12,7 +12,7 @@ class WhileTest
 		int i = 0;		// #1.순환문의 조건을 주기위한 int i 초기화
 		while(i<10){	// #2.조건( boolean data type)
 		//while(0) {	// ==> compile error (error를 확인하면....)
-		System.out.println("여기는 while문 내부안 임 i ="+i);
+		System.out.println("여기는 whie문 내부안 임 i ="+i);
 		i++;
 		}
 

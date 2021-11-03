@@ -34,7 +34,7 @@ public class CastingTest
 		double test01 = 100 + 0.5;
 		System.out.println(test01);
 		//==> compile error 발생 (확인요망)
-		// int test02 = 100 + 0.5;
+		//int test02 = 100 + 0.5;
 
 		//실수를 정수형에 대입하면 결과는 ??
 		int i3 = 201/2;
