@@ -4,24 +4,45 @@ public class Test3
 {
 	public static void main(String[] args) 
 	{
-		int i1 = Integer.parseInt(args[0]);
-		int i2 = Integer.parseInt(args[1]);
-
-		if (i1%2 == 0) 
-		{
-			System.out.println("ÀÔ·ÂÇÏ½Å 1¹øÂ° ÀÎÀÚ°ª " + i1 + "Àº Â¦¼öÀÌ¸ç 3ÀÇ ¹è¼ö°¡ ¾Æ´Õ´Ï´Ù.");
-		} else if (i1%2 != 0)
-		{
-			System.out.println("ÀÔ·ÂÇÏ½Å 1¹øÂ° ÀÎÀÚ°ª " + i1 + "Àº Â¦¼öÀÌ¸ç 3ÀÇ ¹è¼ö°¡ ¾Æ´Õ´Ï´Ù.");
-		}
+		int num1 = Integer.parseInt(args[0]);
+		int num2 = Integer.parseInt(args[1]);
 
 		
-		if (i1%6 == 0) 
+		if (num1 % 2 == 0)
 		{
-			System.out.println("ÀÔ·ÂÇÏ½Å 1¹øÂ° ÀÎÀÚ°ª " + i1 + "Àº Â¦¼öÀÌ¸ç 3ÀÇ ¹è¼öÀÔ´Ï´Ù.");
-		} else if (i2%2 == 1 && i2%3 == 0)
+			System.out.print("ì…ë ¥í•˜ì‹  1ë²ˆì§¸ ì¸ìê°’ "+ num1 +"ì€ ì§ìˆ˜ì´ë©° ");
+			if(num1 % 3 == 0) {
+				System.out.println("3ì˜ ë°°ìˆ˜ì…ë‹ˆë‹¤.");
+			} else {
+				System.out.println("3ì˜ ë°°ìˆ˜ê°€ ì•„ë‹™ë‹ˆë‹¤.");
+			}
+			
+		} else {
+			System.out.print("ì…ë ¥í•˜ì‹  1ë²ˆì§¸ ì¸ìê°’ "+ num1 +"ì€ í™€ìˆ˜ì´ë©° ");
+			if( num1  % 3 == 0) {
+				System.out.println("3ì˜ ë°°ìˆ˜ì…ë‹ˆë‹¤.");
+			} else {
+				System.out.println("3ì˜ ë°°ìˆ˜ê°€ ì•„ë‹™ë‹ˆë‹¤.");
+			}
+		}
+		
+		if (num2 % 2 == 0)
 		{
-			System.out.println("ÀÔ·ÂÇÏ½Å 2¹øÂ° ÀÎÀÚ°ª " + i2 + "Àº È¦¼öÀÌ¸ç 3ÀÇ ¹è¼öÀÔ´Ï´Ù.");
-		} 
+			System.out.print("ì…ë ¥í•˜ì‹  2ë²ˆì§¸ ì¸ìê°’ "+ num2 +"ì€ ì§ìˆ˜ì´ë©° ");
+			if(num2 % 3 == 0) {
+				System.out.println("3ì˜ ë°°ìˆ˜ì…ë‹ˆë‹¤.");
+			} else {
+				System.out.println("3ì˜ ë°°ìˆ˜ê°€ ì•„ë‹™ë‹ˆë‹¤.");
+			}
+			
+		} else {
+			System.out.print("ì…ë ¥í•˜ì‹  2ë²ˆì§¸ ì¸ìê°’ "+ num2 +"ì€ í™€ìˆ˜ì´ë©° ");
+			if( num2  % 3 == 0) {
+				System.out.println("3ì˜ ë°°ìˆ˜ì…ë‹ˆë‹¤.");
+			} else {
+				System.out.println("3ì˜ ë°°ìˆ˜ê°€ ì•„ë‹™ë‹ˆë‹¤.");
+			}
+		}
+
 	}
 }
