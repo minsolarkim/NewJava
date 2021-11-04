@@ -28,8 +28,8 @@ public class  ContinueTest{
 				
 				//==> 아래의내용은 for 순환문이 수행하며
 				//==> 변수의 값의 변화를 확인 하기 위한  출력문 ( DEBUG )
-				System.out.println("i : "+i);         
-				System.out.println("sum : "+sum);
+				//System.out.println("i : "+i);         
+				//System.out.println("sum : "+sum);
 		}
 
 		System.out.println("0 ~ "+inputData+" 까지의 짝수의 합은 : "+sum);
