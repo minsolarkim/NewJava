@@ -12,8 +12,8 @@ class WhileTest
 		int i = 0;		// #1.순환문의 조건을 주기위한 int i 초기화
 		while(i<10){	// #2.조건( boolean data type)
 		//while(0) {	// ==> compile error (error를 확인하면....)
-		System.out.println("여기는 whie문 내부안 임 i ="+i);
-		i++;
+			System.out.println("여기는 whie문 내부안 임 i ="+i);
+			i++;
 		}
 
 		//do-while문
@@ -40,7 +40,7 @@ class WhileTest
 		}
 
 		//==> 아래의 주석을 풀면 compile error가 발생한다 이유는...
-		//System.out.println("error가 발생한다. 이유는...");
+		System.out.println("error가 발생한다. 이유는...");
 	}
 
 	

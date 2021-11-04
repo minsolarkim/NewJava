@@ -19,7 +19,7 @@ public class  SwitchTest
 				break;
 			case 2:
 				System.out.println("입력하신 값은 2입니다.");
-				break;
+				//break;
 			case 3:
 				System.out.println("입력하신 값은 3입니다.");
 				break;
