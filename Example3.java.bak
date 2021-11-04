@@ -12,15 +12,15 @@ class Example3
 			sum += i;
 			}
 			System.out.println("sum : "+sum);
+		} else if (num1 == num2)
+		{
+			System.out.println("입력값이 같습니다.");
 		} else if (num1 > num2)
 		{
 			for(int i = num2; i <= num1; i++){
 			sum += i;
 			}
 			System.out.println("sum : "+sum);		
-		} else if (num1 == num2)
-		{
-			System.out.println("입력값이 같습니다.");
 		}
 		
 		
