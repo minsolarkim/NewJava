@@ -25,24 +25,26 @@ public class Example1
 			*/
 
 			// switch문
-			switch( num/10 ){
-				
+			switch(num/10){
+				System.out.print("입력하신 값 : "+ num + "점은 ");
 				case 10: 
 				case 9:
-					System.out.println("입력하신 값 : "+ num + "점은 수입니다.");
+					System.out.println("수입니다.");
 					break;
 				case 8:
-					System.out.println("입력하신 값 : "+ num + "점은 우입니다.");
+					System.out.println("가입니다.");
 					break;
 				case 7:
-					System.out.println("입력하신 값 : "+ num + "점은 미입니다.");
+					System.out.println("가입니다.");
 					break;
 				case 6:
-					System.out.println("입력하신 값 : "+ num + "점은 양입니다.");
+					System.out.println("가입니다.");
 					break;
 				default:
-					System.out.println("입력하신 값 : "+ num + "점은 가입니다.");
+					System.out.println("가입니다.");
 					break;
+
+					
 
 			}//end of switch
 			
