@@ -40,7 +40,6 @@ class Developer
 			avgIncome++;
 		}
 
-
 		System.out.println("Hello World!");
 	}
 } // end of class
