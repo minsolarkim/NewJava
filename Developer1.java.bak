@@ -27,7 +27,7 @@ public class Developer1
 		행위 및 참여 project의 name을 디스플레이하는 행위
 	*/
 
-	public void participateProject(String project){
+	public void participatePoject(String project){
 		System.out.println(project + "==> project 참여로 수입증가, 경력쌓음");
 		avgIncome++;
 		projectCareer++;

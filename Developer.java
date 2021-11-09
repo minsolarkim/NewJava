@@ -5,10 +5,8 @@
 	이를 java language로 구현
 */
 
-class Developer
+public class Developer
 {
-	public static void main(String[] args) 
-	{
 		//Field ==> 특성,속성(attribute) 표현
 		String name = "홍길동";
 		String job = "개발자";
@@ -16,8 +14,7 @@ class Developer
 		int projectCareer; //<== Field 선언만 한 경우(변수를 선언만 한 경우) 초기화 유무는?
 
 		//Method ==> 기능, 행위(behavior) 표현
-		/*
-			project에 참여하여 수입의 증가 및 경력을 쌓음을 나타내는 method
+		/* project에 참여하여 수입의 증가 및 경력을 쌓음을 나타내는 method
 			1. income을 1 증가
 			2. projectCareer를 1 증가
 			행위
@@ -29,17 +26,13 @@ class Developer
 			projectCareer++;
 		}
 
-		/*
-			강의를 통해 수입의 증가
+		/* 강의를 통해 수입의 증가
 			1. income을 1 증가
-			행위
+			행위			
 		*/
-
 		public void instruct(){
 			System.out.println("강의를 통한 수입 증가");
 			avgIncome++;
 		}
 
-		System.out.println("Hello World!");
-	}
 } // end of class

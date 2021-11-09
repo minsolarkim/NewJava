@@ -17,8 +17,8 @@
 public class Developer2 
 {
 	//Field ==> 특징, 속성(attribute) 표현
-	private String name = "홍길동";
-	//String name = "홍길동";
+	//private String name = "홍길동";
+	String name = "홍길동";
 	String job = "개발자";
 	int avgIncome = 100;
 	int projectCareer;	//<== Field 선언만 한 경우(변수를 선언만 한 경우) 초기화 유무는?

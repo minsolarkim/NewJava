@@ -27,7 +27,7 @@ class MethodSyntax
 
 	//==> 두 개의 정수를 받아 합을 return  하는 행위
 	public int sum(int i, int j){
-		System.out.println("<<"+i+">> 와 <<"+j+">>값을 받아 합 retrun");
+		System.out.println("<<"+i+">> 와 <<"+j+">>값을 받아 합 return");
 		return(i+j);
 	}
 
