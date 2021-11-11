@@ -1,29 +1,30 @@
-package jb04.part07;
+package jb04.part07.outer;
 
 /*
-	FileName : Son,java
+	FileName : Son1,java
 	
 	1. Encapsulation(information hiding)을 지원하는 Access Modifier 이해
 	2. public / protected /       / private 의 사용 및 이해 
 
-	ㅇ Son 은 Father 와 같은 package 에 존재하며, 상속관계이다.
+	ㅇ Son1은 Father 와 다른 package에 존재, 상속관계
 	ㅇ 주석을 풀고 
 	      ==> Compile 시 error 를 확인하고, error 의 의미 이해
-	      ==> 각 Access Modifier 의 접근범위를 확인  
+	      ==> 각 Access Modifier 의 접근범위를 확인할 것  
 */
-public class Son extends Father{
+public class Son1 extends jb04.part07.Father{
 	
 	///Field
 	
 	///Constructor
-	public Son(){
-		System.out.println(this.name);    	//==> public String name = "홍길동";
+	public Son1(){
+		System.out.println(this.name);		//==> public String name = "홍길동";
 		System.out.println(bank);		        //==> protected String bank = "한양은행";
-		System.out.println(branch);	        //==> String branch="역삼동지점";
-		//System.out.println(password);		 //==> private int password = 1234;
+		//System.out.println(branch);	     	//==> String branch="역삼동지점";
+		//System.out.println(password);  	//==> private int password = 1234;
 		
 		//==> Field(상태정보)는 Method(행위)를 이용 접근
-		System.out.println("은행 비밀번호: "+ this.getPassword(0));
+		System.out.println(this.getBranch());
+		System.out.println(getPassword(0));
 	}
 }//end of class
 
