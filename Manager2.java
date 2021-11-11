@@ -4,30 +4,30 @@
 	==> 아래의 예제 실행을 통해 super(), this()의 역할 및 의미를 이해
 */
 
-public class Manager2 extends Employee  {
+public class Manager2 extends Employee2  {
 	
 	///Field
 	int salary;
 
 	///Constructor
-	public Manager(){
+	public Manager2(){
 		System.out.println("Manager의 default Constructor");
 	}
-	public Manager(String name){
+	public Manager2(String name){
 		super(name);
 		System.out.println("Manager의 name을 받는 Constructor");
 	}
-	public Manager(String name, String part){
-		this(name, part);
+	public Manager2(String name, String part){
+		this(name);
 		this.part = part;
 		System.out.println("Manage의 name, part를 받는 Constructor");
 	}
-	public Manager(String name, String part, int age){
+	public Manager2(String name, String part, int age){
 		super(name, part);
 		this.age = age;
 		System.out.println("Manager의 name, part, age를 받는 Constructor");
 	}
-	public Manager(String name, String part, int age, int salary){
+	public Manager2(String name, String part, int age, int salary){
 		this(name, part, age);
 		this.salary = salary;
 		System.out.println("Manager의 name, part, age, salary를 받는 Constructor");
@@ -35,7 +35,7 @@ public class Manager2 extends Employee  {
 	
 	//Method
 	public int salary(){
-		Systm.out.println("Manager의 salary method");
+		System.out.println("Manager의 salary method");
 		baseSalary = 200;
 		return baseSalary;
 	}
@@ -48,18 +48,18 @@ public class Manager2 extends Employee  {
 	//Main Method
 	public static void main(String args[]){
 
-		Manager m1 = new Manager("홍길동");
+		//Manager2 m1 = new Manager2("홍길동");
 
 		//Manager m2 = new Manager("홍길동", "EJB");
 
 		//Manager m3 = new Manager("홍길동", "EJB", 25);
 
-		//Manager m4 = new Manager("홍길동", "EJB", 25, 300);
+		Manager2 m4 = new Manager2("홍길동", "EJB", 25, 300);
 
-		//System.out.println("\n");
+		System.out.println("\n");
 
-		//System.out.println("overriding된 salary 호출 : "+m4.salary());
-		//m4.callSalary();
+		System.out.println("overriding된 salary 호출 : " + m4.salary());
+		m4.callSalary();
 
 	}//end of main 
 	

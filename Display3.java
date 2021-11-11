@@ -78,33 +78,30 @@ class Old extends BusCharge {
 }//end of class
 
 
-public class Display2 {
+public class Display3 {
 
 	//main method
 	public static void main(String[] args) {
 
-		Student b1 = new Student();
-		Adult b2 = new Adult();
-		Old b3 = new Old();
+		//상위레퍼런스로 하위 인스턴스를 참조가등(묵시적 형변환/ ~ is a ~ Relation)
+		//abstract class 는 객체 생성불가 그러나 type 선언은??
 
-		b1.information();		
-		System.out.println(b1.section);
-		b1.charge();	//어떤 클래스의 Method 호출되었는지 확인
+		BusCharge bc1 = new Student();	//Student b1 = new Student();
+		BusCharge bc2 = new Adult();	//Adult b2 = new Adult();
+		BusCharge bc3 = new Old();		//Old b3 = new Old();
+		//==> Polymorphism : 하나의 인터페이스 접근 및 다양한 활동
+
+		bc1.information();		
+		System.out.println(bc1.section);
+		bc1.charge();	//어떤 클래스의 Method 호출되었는지 확인
 		
-		b2.information();
-		System.out.println(b2.section);
-		b2.charge();
+		bc2.information();
+		System.out.println(bc2.section);
+		bc2.charge();
 
-		b3.information();
-		System.out.println(b3.section);
-		b3.charge(); 
-
-		//==> 아래의 주석을 차례로 풀어 컴파일 에러를 확인하자.
-		//==> 1. abstract class는 객체 생성 불가
-		//BusCharge bc01 = new BusCharge();
-
-		//==> 2. 객체생성은 불가하나, 변수의 선언 (Data Type)은 가능하다.
-		BusCharge bc02;
+		bc3.information();
+		System.out.println(bc3.section);
+		bc3.charge(); 
 
 	}//end of main
 }//end of class
