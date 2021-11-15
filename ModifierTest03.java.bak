@@ -12,11 +12,11 @@ class TopSecret03 {
 	//Field
 	//==> access modifier를 활요한 information hiding
 	//==> final modifier를 활용한 수정불가
-	private final int secretNo = 7777;
+	private final int secretNo = 7777;		//private으로 선언
 
 	//Constructor
 	//==> Access modifier를 통한 객체생성불가 (private Constructor를 사용한 이유 이해)
-	public TopSecret03(){
+	public TopSecret03(){					//금고는 여전히 밖에 내놓음
 	}
 
 	//Method
@@ -36,6 +36,15 @@ class TopSecret03 {
 		return topSecret;
 		//return new TopSecret03();
 	}
+
+/*	아래꺼를 이해하면 위에꺼도 이해 가능
+	public static String getInstance() {
+		//String abc = "홍길동";
+		String abc = new String("홍길동");
+		return abc;
+	}
+	
+*/
 
 }//end of class
 

@@ -20,7 +20,7 @@ class TopSecret02 {
 	//==> method를 통해 조건을 충족할 경우만 secretNo를 return
 	publid int getSecretNo(int pwd){
 		if ( pwd == 0 ) {
-			return secretNo;
+			return secretNo;	//this.secretNo 생략된거임
 		} else {
 			return 0;
 		}//end of if
