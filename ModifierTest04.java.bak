@@ -35,7 +35,7 @@ final class TopSecret04 {
 	//static method를 이용한 instance return 하게하여 다른 class에서 사용가능하게 함.
 	//==> manageNo를 인자로 받아 Instance를 return할 것 인지를 판단한다.
 	public static TopSecret04 getInstance(int managerNo){
-		if (managerNo == 1234)	{
+		if (managerNo == 1234)	{				//1234가 아니면 return 안 해준다.
 			return new TopSecret04();
 		} else {
 			return null;

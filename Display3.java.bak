@@ -100,7 +100,7 @@ public class Display3 {
 		bc2.charge();
 
 		bc3.information();
-		System.out.println(b3.section);
+		System.out.println(bc3.section);
 		bc3.charge(); 
 
 	}//end of main

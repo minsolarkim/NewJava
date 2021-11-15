@@ -9,10 +9,10 @@ class TopSecret02 {
 	//Field
 	//==>access modifier를 활요한 information hiding
 	//==>private 접근제어를 사용하여 직접 접근할 수 없도록 하고 getter Method 통해 접근
-	private int secretNo = 7777;
+	private int secretNo = 7777;	//private은 선언함
 
 	//Constructor
-	public TopSecret02(){
+	public TopSecret02(){			//여전히 금고 밖에 있음
 	}
 
 	//Method
@@ -20,7 +20,7 @@ class TopSecret02 {
 	//==> method를 통해 조건을 충족할 경우만 secretNo를 return
 	publid int getSecretNo(int pwd){
 		if ( pwd == 0 ) {
-			return secretNo;	//this.secretNo 생략된거임
+			return secretNo;		//this.secretNo 생략된거임
 		} else {
 			return 0;
 		}//end of if

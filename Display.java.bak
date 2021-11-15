@@ -1,16 +1,13 @@
 
 class BusCharge {
-
 	//Field
 	String section;
-
 	//Constructor
 	public BusCharge(){
 	}
 	public BusCharge(String str){
 		section = str;
 	}
-
 	//method
 	public void information(){
 		System.out.println("버스요금안내");
@@ -18,40 +15,33 @@ class BusCharge {
 	public void charge(){
 		System.out.println("학생:300, 일반인:500, 어르신:공짜");
 	}
-
 } //end of class
 
 class Student extends BusCharge {
-
 	public Student(){
 		super("학생");
 	}
 	public void charge(){
 		System.out.println(" :: 300만원\n");
 	}
-
 }
 
 class Adult extends BusCharge {
-
 	public Adult(){
 		super("일반인");
 	}
 	public void charge(){
 		System.out.println(" :: 500만원\n");
 	}
-
 }//end of class
 
 class Old extends BusCharge {
-
 	public Old(){
 		super("어르신");
 	}
 	public void charge(){
 		System.out.println(" :: 공짜\n");
 	}
-
 }//end of class
 
 

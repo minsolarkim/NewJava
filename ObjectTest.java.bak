@@ -54,10 +54,10 @@ public class ObjectTest{
 		obj2.i=100;
 		System.out.println("obj2.i = "+obj2.i + " :  obj1.i = "+obj1.i );
 		
-		//System.out.println("|===============|");
-		//obj2.j = 3333;
-		//System.out.println("obj2.j = "+obj2.j + " : obj1.j = "+obj1.j  );
-		//System.out.println("ObjectTest.j = "+ObjectTest.j );
+		System.out.println("|===============|");
+		obj2.j = 3333;
+		System.out.println("obj2.j = "+obj2.j + " : obj1.j = "+obj1.j  );
+		System.out.println("ObjectTest.j = "+ObjectTest.j );
 		
 	}//end of main
 	
